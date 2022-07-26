@@ -1,0 +1,566 @@
+/* 
+
+Project Name: Malia 
+Author: featherit
+Version: 1.0
+Company: FeatherIt
+Discription: Malia is an html5 responsive template.
+
+================
+TABLE OF INDEX
+================
+
+*/
+
+/* Defult */
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    transition: all .4s ease;
+}
+body{
+    font-family: 'montserrat';
+}
+/* variables */
+:root{
+    --primary: #119ee6;
+    --secondary: #222222;
+    --montserrat: 'Montserrat' 
+}
+.btn-theme {
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 4px;
+}
+.btn-md {
+    padding: 10px 20px;
+    border-radius:0 ;
+}
+/*
+     malia_header_top_area start 
+*/
+.malia_header_top_area{
+   background-color: var(--secondary);
+   color: white;
+   /* padding: 15px 0; */
+}
+
+.malia_header_top_area a{
+    color: white;
+}
+
+.malia_header_top_area a i{
+    margin-right: 5px;
+}
+.malia_header_top_area ul li{
+    display: inline-block;
+    font-weight: 300;
+}
+.malia__top_left_content ul li{
+    margin-right: 30px;
+    padding-top: 10px;
+}
+
+.malia__top_left_content ul li i {
+    padding-right: 10px;
+    color: var(--primary);
+}
+
+.malia__top_right_content{
+    display: flex;
+    justify-content: end;
+}
+.malia__project_menu{
+    display: flex;
+    justify-content: end;
+}
+.malia__project_menu ul li{
+    margin-left: 12px;
+}
+
+.malia__project_menu ul .button{
+    background-color: var(--primary);
+    padding: 10px;
+    text-transform: uppercase;
+}
+.malia__project_menu ul li i:hover{
+    color: var(--primary);  
+}
+/* 
+    malia_header_top_area end 
+*/
+
+/* 
+   malia_header_area start 
+*/
+.malia_header_area{
+    padding: 20px 0;
+    background-color: rgb(231, 230, 230);
+}
+/* logo */
+.malia__logo h1{
+    color: black;
+    font-family: 'Mont Heavy DEMO';
+    font-weight: 700;
+}
+
+/* menu */
+.malia__menu_area{
+    text-transform: uppercase;
+}
+.malia__menu_area ul{
+    text-align: center;
+}
+.malia__menu_area ul li{
+    display: inline-block;
+    position: relative;
+}
+
+.malia__menu_area ul li a{
+    display: block;
+    color: black;
+    font-family: var(--montserrat);
+    margin:2px 10px;
+    font-weight: 600;
+    position: relative;
+}
+.malia__menu_area ul li a::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background-color: var(--primary);
+    position: absolute;
+    left: 0;
+    bottom: -34px;
+}
+.malia__menu_area ul li a:hover::after{
+    width: 100%;
+}
+.malia__menu_area ul li a:hover{
+    color: var(--primary);
+}
+.malia__menu_area ul li ul{
+    position: absolute;
+    left: 0;
+    top: 80%;
+    width: 150px;
+    background-color: white;
+    margin-top: 32px;
+    padding: 10px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .4s ease;
+    z-index: 11;
+}
+.malia__menu_area ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    top: 100%;
+}
+.malia__menu_area ul li ul li{
+    display: block;
+    text-align: left;
+}
+.malia__menu_area ul li ul li a{
+    color: black;
+    font-size: 90%;
+}
+.malia__menu_area ul li:hover a,.malia__menu_area ul li:hover ul li a:hover{
+    color: var(--primary);
+}
+.malia__menu_area ul li:hover ul li a{
+    color: black;
+    
+}
+
+/* 
+   search box 
+*/
+.malia__search_box{
+    display: flex;
+    justify-content: end;
+}
+.malia__search_box i{
+    color: gray;
+    transition: all .4s ease;
+}
+.malia__search_box  a {
+    height: 35px;
+    width: 35px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px;
+}
+.malia__search_box  a:hover ,.malia__search_box i:hover{
+    background-color: var(--primary);
+    border: 0;
+    color: white;
+}
+/* 
+   malia_header_area end 
+*/
+/* 
+   malia_hero_area start
+*/
+.malia__hero_single_item{
+    background-size: cover;
+    background-position:  center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+.malia__hero_single_item::after{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: var(--secondary);
+    z-index: -1;
+    opacity: 0.5;
+}
+.malia__hero_item_content{
+    padding: 200px 0;
+    padding-left: 20px;
+}
+.malia__hero_item_content h6 {
+    text-transform: uppercase;
+    font-weight: 200;
+    font-family: 'Mont Heavy DEMO';
+    margin-bottom: 25px;
+}
+
+.malia__hero_item_content h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.malia__hero_item_content h1 span {
+    color: var(--primary);
+    font-weight: 900;
+}
+
+.malia__hero_item_content p {
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.malia__hero_item_content ul li {
+    display: inline-flex;
+    margin-right: 10px;
+}
+
+.malia__hero_item_content ul li a {
+    color: white;
+    border: 2px solid white;
+    padding: 12px;
+}
+.malia__hero_item_content ul li:last-child a{
+    border: 0;
+    padding: 13px;
+    background-color: var(--primary);
+}
+.malia__hero_item_content ul li a:hover{
+    background-color: white;
+    color: black;
+    border: 0;
+    padding: 13px;
+}
+.malia__hero_item_content ul li:last-child a:hover{
+    background-color: transparent;
+    padding: 12px;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+}
+/* 
+   malia_hero_area end
+*/
+/* 
+    malia__service_area start
+ */
+.malia_service_area{
+    background-repeat: no-repeat;
+    background-size: 100% 100%;;
+    background-attachment: local;
+    background-position: center;
+    padding-top: 50px;
+    max-width: 100%;
+    max-height: 100%; 
+}
+.malia__service_single{
+    padding: 115px 33px;
+    background: #222;
+    color: #fff;
+    margin-bottom: 30px;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+   
+}
+.single_service{
+    margin-top: -100px;
+    position: relative;
+    z-index: 9;
+}
+.vs-itam {
+    padding-top: 177px;
+    padding-bottom: 177px;
+}
+.malia__service_single:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 100%;
+    background: rgba(0,0,0,.65);
+    z-index: 0;
+    
+}
+.malia__service_single a{
+    position: relative;
+    z-index: 1;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: 4px;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    justify-content: center;
+    color: #fff;
+    transition: all .4s ease;
+    height: 100%;
+}
+
+.malia__service_single a:hover{
+    color: var(--primary);
+}
+/* 
+    malia__service_area end
+ */
+/* 
+    malia_builder_area start 
+*/
+.malia_builder_area{
+    padding: 50px 0;
+}
+.malia__builder_banner_area img{
+    max-width: 100%;
+}
+.malia__builder_title{
+   margin: 50px 0; 
+}
+.malia__builder_title h1{
+    font-weight: 700;
+    font-size: 50px;
+    text-transform: uppercase;
+    line-height: 60px;
+    position: relative;
+}
+.malia__builder_title span{
+    color: var(--primary);
+}
+.malia__builder_title h1::after{ 
+    margin-bottom: -50px;
+    content: '';
+    height: 6px;
+    width: 60px;
+    display: block;
+    background-color: var(--primary);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.malia__builder_title p{
+    margin-top: 100px;
+    line-height: 20px;
+}
+.malia__bulder_single_item{
+    display: flex;
+}
+.malia__single_icon{
+    font-size: 32px;
+    color: #119ee6;
+    padding-right: 35px;
+} 
+.malia__single_content{
+    color: #727272;
+    line-height: 25px;
+    font-size: 12px;
+}
+.malia__single_content h3{
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 15px;
+}
+/* 
+    malia_builder_area end 
+*/
+/* 
+    malia_partner_area start
+*/
+ .malia_partner_area{
+    background-color: var(--secondary);
+    padding: 100px 0;
+ }
+/* 
+    malia_partner_area end
+*/
+/* 
+    malia_project_area start
+*/
+
+.malia_project_area{
+    margin: 50px 0;
+}
+/* .malia__project_left_bar h1{
+    margin: 10px 0;
+} */
+.malia__project_menu {
+    display: flex;
+    justify-content: end;
+}
+.malia__project_menu ul li{
+    display: inline-block;
+    padding: 5px 5px;
+    transition: all .4s ease;
+}
+.malia__project_menu ul li a{
+    color: black;
+    text-transform: capitalize;
+}
+.malia__project_menu ul li:hover {
+    background-color: var(--primary);
+    color: #fff;
+}
+/* .malia__project_single_item{
+    margin: 20px 0;
+    padding: 0 0 15px 15px;
+    overflow: hidden;
+    float: left;
+    box-sizing: border-box;
+} */
+.malia__project_single_item{
+    margin-top: 20px;
+    text-align: center;
+}
+.single_project{
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 1;
+}
+.single_project img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.single_project:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: var(--primary);
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .4s ease;
+}
+
+.single__project_content{
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 3;
+    padding: 40px 0;
+}
+.content{
+    padding: 140px 0;
+}
+.malia__project_single_item:hover .single_project:after{
+    visibility: visible;
+    opacity: .8;
+}
+.malia__project_single_item:hover .single__project_content{
+    visibility: visible;
+    opacity: 1;
+}
+.single__project_content h3{
+    text-transform: capitalize;
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+}
+.single__project_content p,a{
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.single__project_content a{
+    color: #fff;
+    flex-basis: 100%;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+/* 
+    malia_project_area end
+*/
+/* 
+    malia_client_area start
+*/
+.malia__signle_client{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.header_section h1{
+    padding: 50px 0;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    text-transform: capitalize;
+    font-weight: 300;
+    position: relative;
+    margin-bottom: 10px;
+}
+.header_section h1 span{
+    font-weight: 900;
+}
+.header_section h1:after{ 
+    content: '';
+    height: 6px;
+    width: 100px;
+    align-items: center;
+    display: block;
+    background-color: var(--primary);
+    position: absolute;
+    left: 540px;
+}
+/* 
+    malia_client_area start
+*/
